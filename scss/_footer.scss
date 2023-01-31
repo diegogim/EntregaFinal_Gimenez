@@ -1,0 +1,65 @@
+footer{
+    position: relative;
+    overflow: hidden;
+    img{
+        height: map-get($map: $heightSS, $key: 'desktop');
+        width: 100%;
+        object-fit: cover;
+    }
+    section{
+        @extend .borde;
+        @extend .text-over-footer;
+        @extend .screenSection;
+        background-color: map-get($map: $bgColor, $key: 'footer');
+        h2{
+            @extend .text-center;
+            @extend .text-uppercase;
+            color: map-get($map: $textColor, $key: 'white');
+            font-size: $titleXl;
+            font-weight: $textBold; 
+        }
+        p{
+            @extend .text-center;
+            color: map-get($map: $textColor, $key: 'white');
+            font-size: $textMd;
+            font-weight: $textReg;
+            margin-left: 100px;
+            margin-right: 100px;
+            a{
+                text-decoration: none;
+                @extend .text-center;
+                @extend .hoverSoft;
+                color: map-get($map: $textColor, $key: 'white');
+                font-size: $textSm;
+                font-weight: $textReg;
+                &:hover{
+                    color: map-get($map: $textColor, $key: 'white');
+                }
+            }
+        }
+        div{
+            h4{
+                @extend .text-center;
+                @extend .text-uppercase;
+                @extend .my-5;
+                color: map-get($map: $textColor, $key: 'white');
+                font-size: $textLg;
+                font-weight: $textBold;
+            }
+            ul{
+                li{
+                    list-style: none;
+                    display: inline-block;
+                    margin-right: 20px;
+                    margin-left: 20px;
+                    a{
+                        img{
+                            width: 50px;
+                            height: 50px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

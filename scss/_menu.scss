@@ -1,0 +1,98 @@
+main{
+    background-color: map-get($map: $bgColor, $key: 'section');
+    #titleBebidas, #titleAlimentos{
+        @extend .borde;
+        @extend .text-center;
+        @extend .text-uppercase;
+        @extend .textUnderline;
+        padding-top: 3rem;
+        padding-bottom: 1rem;
+        color: map-get($map: $textColor, $key: 'white');
+        font-size: $titleLg;
+        font-weight: $textReg;
+    }
+
+    #renderLista{
+        text-align: center;
+        margin-top: 5rem;
+        .btn{
+            font-size: $textMd;
+            padding: 1rem;
+            border-color: map-get($map: $paletaColor, $key: 'InputDrop');
+            border-style: solid;
+            background-color: map-get($map: $paletaColor, $key: 'InputDrop');
+        }
+    }
+
+    #renderMenu{
+        @extend .screenSection;
+        margin: 5rem 1rem 0 0;
+        #elementoMenu{
+            @extend .borde;
+            border-color: map-get($map: $paletaColor, $key: 'InputDrop');
+            border-style: solid;
+            border-radius: 1rem;
+            background-color: map-get($map: $paletaColor, $key: 'InputDrop');
+            padding: 0 1rem;
+            margin: 1rem;
+
+            #elementoImg{
+                align-items: center;
+                #containerImg{
+                    @extend .borde;
+                    overflow: hidden;
+                    img{
+                        @extend .borde;
+                        @extend .zoomImg;
+                        margin-left: 1rem;
+                        margin-right: 1rem;
+                        width: 150px;
+                        height: 150px;
+                        padding-top: 1rem;
+                        padding-bottom: 1rem;
+                        object-fit: cover;
+                    }
+                }
+                #containerInfo{
+                    margin-top: 1rem;
+                    margin-bottom: 1rem;
+                    height: 215px;
+                    display: flex;
+                    align-items: center;
+                    div{
+                        @extend .borde;
+                        h4{
+                            @extend.borde;
+                            @extend .nombreElemento;
+                            padding-left: 1.5rem;
+                        }
+                        h5{
+                            @extend.borde;
+                            @extend .descElemento;
+                            padding-left: 1.5rem;
+                        }
+                        div{
+                            padding: 1.5rem;
+                            align-items: center;
+                            p{
+                                @extend .borde;
+                                @extend .precioElemento;
+                            }
+                            button{
+                                font-size: $textSm;
+                                background-color: map-get($map: $paletaColor, $key: 'BtnSubmit');
+                                border: none;
+                                color: map-get($map: $textColor, $key: 'white');
+                                border-radius: 1rem;
+                                text-transform: uppercase;
+                                &:hover {
+                                    background-color: map-get($map: $paletaColor, $key: 'BtnSubmitHover');
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

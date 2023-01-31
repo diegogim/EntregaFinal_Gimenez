@@ -1,0 +1,49 @@
+main{
+    #renderPedido{
+        padding-top: 5rem;
+        padding-left: 15rem;
+        padding-right: 15rem; 
+        padding-bottom: 5rem;   
+        td{
+            font-family: $fontSecondary;
+            font-size: $textMd;
+            font-weight: $textLight;
+            color: map-get($map: $textColor, $key: 'white');
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+            img{
+                width: 100px;
+                height: 100px;
+            }
+            a{
+                color: map-get($map: $textColor, $key: 'white');
+            }
+            .btn{
+                margin-left: 2rem;
+                margin-right: 2rem;
+                font-size: $textMd;
+                background-color: map-get($map: $paletaColor, $key: 'BtnSubmit');
+                border: none;
+                color: map-get($map: $textColor, $key: 'white');
+                border-radius: 1rem;
+                padding: 1rem;
+                text-transform: uppercase;
+                &:hover {
+                    background-color: map-get($map: $paletaColor, $key: 'BtnSubmitHover');
+                }
+            }
+            #btnEliminarPedido{
+                font-size: $textSm;
+                background-color: map-get($map: $paletaColor, $key: 'BtnSubmit');
+                border: none;
+                color: map-get($map: $textColor, $key: 'white');
+                border-radius: 1rem;
+                padding: 1rem;
+                text-transform: uppercase;
+                &:hover {
+                    background-color: map-get($map: $paletaColor, $key: 'BtnSubmitHover');
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,107 @@
+#eventos1{
+    @extend .screenSection;
+    h2{
+        @extend .borde;
+        @extend .text-center;
+        @extend .text-uppercase;
+        padding-bottom: 1.5rem;
+        @extend .textUnderline;
+        color: map-get($map: $textColor, $key: 'white');
+        font-size: $titleXl;
+        font-weight: $textBold;
+    }
+    #CarrouselEventos2{
+        @extend .borde;
+        height: 60vh;
+        div{
+            div{
+                div{
+                    figure{
+                        @extend .borde;
+                        @extend .text-center;
+                        padding: 0.25rem;
+                        margin: 5rem;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        img{
+                            @extend .img-carEventos;
+                        }
+                        figcaption{
+                            @extend .py-2;
+                            color: map-get($map: $textColor, $key: 'red');
+                            font-size: $textMd;
+                            font-weight: $textReg;
+                        }
+                        p{
+                            @extend .py-2;
+                            color: map-get($map: $textColor, $key: 'white');
+                            font-size: $textSm;
+                            font-weight: $textLight;  
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#eventos2{
+    @extend .borde;
+    @extend .screenSection;
+    height: 100vh;
+    h2{
+        @extend .borde;
+        @extend .text-center;
+        @extend .text-uppercase;
+        padding-bottom: 1.5rem;
+        @extend .textUnderline;
+        color: map-get($map: $textColor, $key: 'white');
+        font-size: $titleXl;
+        font-weight: $textBold;
+    }
+    form{
+        @extend .bordeForm;
+        @extend .text-label;
+        @extend .text-start;
+        input[type=text], select{
+            @extend .bordeFieldForm;
+            @extend .text-input;
+            width: 25vw;
+            margin: 1rem 0px;
+        }
+        input[type=tel], select{
+            @extend .bordeFieldForm;
+            @extend .text-input;
+            width: 15vw;
+            margin: 1rem 5px;
+        }
+        input[type=email], select{
+            @extend .bordeFieldForm;
+            @extend .text-input;
+            width: 41vw;
+            margin: 10px 0;
+        }
+        textarea, select{
+            @extend .bordeFieldForm;
+            @extend .text-input;
+            width: 41vw;
+            margin: 10px 0;
+        }
+        input[type=submit] {
+            width: 20vw;
+            height: 5vh;
+            font-size: $textSm;
+            padding: 0 1rem;
+            margin-top: 1rem;
+            background-color: map-get($map: $paletaColor, $key: 'BtnSubmit');
+            border: none;
+            color: map-get($map: $textColor, $key: 'white');
+            border-radius: 1rem;
+            text-transform: uppercase;
+            &:hover {
+                background-color: map-get($map: $paletaColor, $key: 'BtnSubmitHover');
+            }
+        }
+    }
+}

@@ -1,0 +1,230 @@
+h1, h2, h3{
+    font-family: $fontMain;
+}
+
+h4, h5, p, figcaption, a{
+    font-family: $fontSecondary;
+}
+
+.bordeForm{
+    border-color:map-get($map: $paletaColor, $key: 'bordeForm');
+    border-style: solid;
+    border-width: 0.1rem;
+    padding: 3rem;
+}
+
+.bordeFieldForm{
+    padding: 0 1rem;
+    border: none;
+    border-bottom: 0.15rem;
+    border-color: map-get($map: $paletaColor, $key: 'bordeInputText');
+    border-bottom-style: dotted;
+    background-color: inherit;
+}
+
+.btnDropdown{
+    height: 5vh;
+    padding: 0 1rem;
+    background-color: map-get($map: $paletaColor, $key: 'InputDrop');
+    border: none;
+    border-radius: 1rem;
+    color: map-get($map: $textColor, $key: 'white');
+    &:hover{
+        background-color: map-get($map: $paletaColor, $key: 'InputDropHover');
+    }
+}
+
+.mediaHeader{
+    filter: grayscale(0.5);
+    width: 100%;
+    height: map-get($map: $heightSS, $key: 'desktop');
+    position: relative;
+    z-index: 0;
+    object-fit: cover;
+}
+
+.text-over-header{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text-over-footer{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text-over-break{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.screenSection{
+    height: map-get($map: $heightSS, $key: 'desktop');
+    background-color: map-get($map: $bgColor, $key: 'section');
+    overflow: hidden;
+}
+
+.img-nos{
+    height:500px ;
+    width: 500px;
+    object-fit: cover;
+}
+
+.img-break{
+    height: 50vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+.img-AyB{
+    height: 450px;
+    width: 450px;
+    object-fit: cover;
+}
+
+.margenH{
+    margin: 50px 0px;
+}
+
+.margenP{
+    margin: 50px 100px;
+}
+
+.img-carEventos{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.img-carNos{
+    width: auto;
+    height: map-get($map: $heightSS, $key: 'desktop');
+    object-fit: contain;
+}
+
+#headerSecondary{
+    position: relative;
+    overflow: hidden;
+    background-color: map-get($map: $bgColor, $key: 'section');
+    img{
+        @extend .mediaHeader;
+    }
+    div{
+        @extend .text-over-header;
+        background-color: map-get($map: $bgColor, $key: 'header');
+        height: 100%;
+        width: 100%;
+        h2{    
+            @extend .text-center;
+            @extend .text-uppercase;
+            color: map-get($map: $textColor, $key: 'white');
+            font-family: $fontMain;
+            font-size: $titleXxl;;
+            font-weight: $textBold;
+        }
+    }
+}
+
+#headerPedido{
+    background-color: map-get($map: $bgColor, $key: 'section');
+    height: 20px;
+    h2{    
+        @extend .text-center;
+        @extend .text-uppercase;
+        color: map-get($map: $textColor, $key: 'white');
+        font-family: $fontMain;
+        font-size: $titleLg;;
+        font-weight: $textBold;
+    }
+}
+
+.nombreElemento{
+    font-family: $fontMain;
+    font-size: $titleXs;
+    font-weight: $textReg;
+    color: map-get($map: $textColor, $key: 'white');
+    margin-bottom: 1rem;
+}
+
+.descElemento{
+    font-family: $fontSecondary;
+    font-size: $textSm;
+    font-weight: $textLight;
+    color: map-get($map: $textColor, $key: 'white');
+}
+
+.precioElemento{
+    font-family: $fontSecondary;
+    font-size: $textMd;
+    font-weight: $textReg;
+    color: map-get($map: $textColor, $key: 'white');
+}
+
+.hoverHard{
+    display: inline-block;
+    position: relative;
+    color: map-get($map: $paletaColor, $key: 'BtnSubmitHover');
+
+    &::after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 0.5rem;
+        bottom: 0;
+        left: 0;
+        background-color: map-get($map: $paletaColor, $key: 'BtnSubmitHover');
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+    }
+
+    &:hover:after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+
+    &:link, &:visited, &:active{
+    text-decoration: none;
+    }
+}
+
+.hoverSoft{
+    display: inline-block;
+    position: relative;
+    color: map-get($map: $paletaColor, $key: 'BtnSubmitHover');
+
+    &::after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 0.2rem;
+        bottom: 0;
+        left: 0;
+        background-color: map-get($map: $paletaColor, $key: 'BtnSubmitHover');
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+    }
+
+    &:hover:after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+      }
+
+    &:link, &:visited, &:active{
+    text-decoration: none;
+    }
+}
+
+.zoomImg{
+    transition: all .3s ease-in-out;
+    &:hover{
+        transform: scale(1.1);
+    }
+}

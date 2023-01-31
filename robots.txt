@@ -1,0 +1,3 @@
+User-Agent: *
+Disallow: /pages/menu_not_indexed.html
+Disallow: /src

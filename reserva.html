@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="Haz una reservación en Smoke's, el mejor restaurante de BBQ de la Ciudad de México. Nuestras recetas son únicas, ahumamos nuestros cortes, y horneamos nuestro pan. Todo es 100% artesanal.">
+    <meta name="keywords" content="Restaurante, BBQ, Costillas, Costillas BBQ, Restaurante CDMX, Brisket, Pulled Pork, Sandwiches, Gringo, Comida">
+    <meta name="robots" content="index,follow">
+    <meta name="author" content="Diego Gimenez">
+
+
+    <title>Smoke's BBQ House | Reservaciones</title>
+
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="shortcut icon" href="./src/img/favicon.ico" type="image/x-icon">
+
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NSGZJNM');</script>
+
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1177295049868887');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=1177295049868887&ev=PageView&noscript=1"/></noscript>
+  </head>
+
+  <body>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NSGZJNM"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" id="Navbar">
+        <div class="container-fluid justify-content-between">
+            <div class="ms-4">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="./src/img/logo.png" alt="Logo de Smoke's BBQ House">
+                </a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-start bg-black" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 id="offcanvasNavbarLabel">Smokes BBQ House</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item mx-5">
+                            <a class="nav-link" aria-current="page" href="./nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item mx-5">
+                            <a class="nav-link" aria-current="page" href="./menu.html">Menú</a>
+                        </li>
+                        <li class="nav-item mx-5">
+                            <a class="nav-link" aria-current="page" href="./eventos.html">Eventos</a>
+                        </li>
+                        <li class="nav-item mx-5">
+                            <a class="nav-link" aria-current="page"  href="./reserva.html">Reserva</a>
+                        </li>
+                        <li class="nav-item mx-5">
+                            <a class="nav-link" aria-current="page"  href="#" id="btnOrden">
+                            </a> 
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header id="headerSecondary">
+        <img src="../src/img/reserva/header_Reserva.webp" alt="Imagen de unas manos deteniendo un sandwich de brisket">
+        <div class="d-flex flex-column justify-content-center w-100">
+            <h2>Reservar</h2>
+        </div>
+    </header>
+
+    <main>
+        <section id="reserva1">
+            <div class="row">
+                <article class="col-sm-12 col-md-4 d-flex flex-column justify-content-center align-items-center">
+                    <div id="titleReserva">
+                       <h3>¿Quieres una mesa?</h3> 
+                    </div>
+                    <p>En Smokes no hacemos reservaciones, pero la vida es corta, así que planéate esa cita a ciegas, la reunión familiar o la mesa con tu banda y acá te la guardamos 😉</p>
+                </article>
+
+                <article class="col-sm-12 col-md-8 d-flex justify-content-center align-items-center" id="formReserva">
+                    <form action="">
+                        <div class="d-flex flex-sm-column flex-lg-row">
+                            <div>
+                                <input type="date" id="Reserva_Fecha">
+                                <select name="hora" id="Reserva_Hora">
+                                    <option value="13.00">13:00</option>
+                                    <option value="13.30">13:30</option>
+                                    <option value="14.00">14:00</option>
+                                    <option value="14.30">14:30</option>
+                                    <option value="15.00">15:00</option>
+                                    <option value="15.30">15:30</option>
+                                    <option value="16.00">16:00</option>
+                                    <option value="16.30">16:30</option>
+                                    <option value="17.00">17:00</option>
+                                    <option value="17.30">17:30</option>
+                                    <option value="18.00">18:00</option>
+                                    <option value="18.30">18:30</option>
+                                    <option value="19.00">19:00</option>
+                                    <option value="19.30">19:30</option>
+                                    <option value="20.00">20:00</option>
+                                    <option value="20.30">20:30</option>
+                                    <option value="21.00">21:00</option>
+                                    <option value="21.30">21:30</option>
+                                </select>
+                            </div>
+                            <div>
+                                <select name="lugar" id="Reserva_Lugar">
+                                    <option value="Terraza">Terraza</option>
+                                    <option value="Salón">Salón</option>
+                                </select>
+                                <select name="pax" id="Reserva_Pax">
+                                    <option value="1">1 persona</option>
+                                    <option value="2">2 personas</option>
+                                    <option value="3">3 personas</option>
+                                    <option value="4">4 personas</option>
+                                    <option value="5">5 personas</option>
+                                    <option value="6">6 personas</option>
+                                    <option value="7">7 personas</option>
+                                    <option value="8">8 personas</option>
+                                    <option value="9">9 personas</option>
+                                    <option value="10">10 personas</option>
+                                </select>
+                            </div> 
+                        </div>
+                        <div class="d-flex flex-row">
+                            <div class="my-3">
+                                <label for="name">Nombre</label><br>
+                                <input type="text" id="Reserva_Nombre">
+                            </div>
+                            <div class="my-3">
+                                <label for="phone">Teléfono</label><br>    
+                                <input type="tel" id="Reserva_Tel">
+                            </div>
+                        </div>
+                        <div class="my-3">
+                            <label for="email">Email</label><br>
+                            <input type="email" id="Reserva_email">
+                        </div>
+                        <div class="my-3">
+                            <label for="info">Solicitudes especiales</label>
+                        </div>
+                        <div>
+                            <textarea name="Info" id="Info" cols="30" rows="2"></textarea>
+                        </div>
+                        <div id="btnSub">
+                            <input type="submit" value="Reservar">
+                        </div>
+                    </form>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <img src="../src/img/footer/footer.webp" alt="Imagen de un jalapeño a la sal atravesado por un cuchillo">
+        <section class="d-flex flex-column justify-content-around w-100">
+            <h2>Abierto hasta que cerramos</h2>
+            <div>
+                <p>Lunes: 13:00 - 22:00</p>
+                <p>Martes: 13:00 - 22:00</p>
+                <p>Miércoles: 13:00 - 22:00</p>
+                <p>Jueves: 13:00 - 23:00</p>
+                <p>Viernes: 13:00 - 00:00</p>
+                <p>Sábado: 13:00 - 00:00</p>
+                <p>Domingo: 12:00 - 22:00</p>
+            </div>
+            <div>
+                <h4>Marcelo 22, Del Valle, CDMX</h4>
+            </div>
+
+            <div class="d-flex flex-column align-items-center">
+                <h4>Síguenos en redes sociales</h4>
+                <ul>
+                    <li><a href="https://www.facebook.com/SmokesBBQHouse/" target="_blank"><img src="../src/img/footer/facebook.png" alt="Síguenos en Facebook"></a></li>
+                    <li><a href="https://www.instagram.com/smokesbbqhouse/" target="_blank"><img src="../src/img/footer/instagram.png" alt="Síguenos en Instagram"></a></li>
+                    <li><a href="https://wa.me/525611246733?text=Hola%20Smokes!" target="_blank"><img src="../src/img/footer/whatsapp.png" alt="Escríbenos en WhatsApp"></a></li>
+                    <li><a href="https://g.page/SmokesBBQHouse?share" target="_blank"><img src="../src/img/footer/placeholder.png" alt="Encuéntranos en Google Maps"></a></li>
+                </ul>
+            </div>
+
+            <div>
+                <p>HICKORY OAK & SMOKE MÉXICO S.A. DE C.V., 2022</p>
+                <p><a href="./privacidad.html">Consulta nuestro aviso de privacidad</a></p>
+            </div>
+        </section>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  </body>
+</html>

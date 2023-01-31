@@ -1,0 +1,80 @@
+#nos1{
+    @extend .borde;
+    @extend .screenSection;
+    div{
+        article{
+            @extend .borde;
+            img{
+                @extend .img-nos;
+            }
+        }
+        article{
+            @extend .borde;
+            div{
+                @extend .textUnderline;
+                h2{
+                    @extend .text-center;
+                    @extend .text-uppercase;
+                    color: map-get($map: $textColor, $key: 'white');
+                    font-size: $titleLg;
+                    font-weight: $textBold; 
+                }
+            }
+            p{
+                @extend .text-center;
+                @extend .margenP;
+                color: map-get($map: $textColor, $key: 'white');
+                font-size: $textLg;
+                font-weight: $textReg; 
+            }
+        }
+    }
+}
+
+#carrNos{
+    @extend .borde;
+    @extend .screenSection;
+    div{
+        div{
+            @extend .text-center;
+            div{
+                img{
+                    @extend .img-carNos;
+                }
+            }
+        }
+    }
+}
+
+#nos2{
+    @extend .borde;
+    @extend .screenSection;
+    div{
+        article{
+            @extend .borde;
+            div{
+                @extend .textUnderline;
+                h2{
+                    @extend .text-center;
+                    @extend .text-uppercase;
+                    color: map-get($map: $textColor, $key: 'white');
+                    font-size: $titleLg;
+                    font-weight: $textBold; 
+                }
+            }
+            p{
+                @extend .text-center;
+                @extend .margenP;
+                color: map-get($map: $textColor, $key: 'white');
+                font-size: $textLg;
+                font-weight: $textReg; 
+            }
+        }
+        article{
+            @extend .borde;
+            img{
+                @extend .img-nos;
+            }
+        }
+    }
+}

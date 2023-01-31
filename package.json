@@ -1,0 +1,20 @@
+{
+  "name": "preentrega3-gimenez",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass",
+    "sass:watch": "sass --watch scss/main.scss  css/main.css",
+    "build": "purgecss --css css/main.css --content *.html pages/*.html -o css/min.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@staaky/fresco": "^2.3.2",
+    "animate.css": "^4.1.1",
+    "bootstrap": "^5.2.2",
+    "sass": "^1.57.1"
+  },
+  "description": ""
+}

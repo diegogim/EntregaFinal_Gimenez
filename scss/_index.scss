@@ -1,0 +1,181 @@
+#headerIndex{
+    position: relative;
+    overflow: hidden;
+    background-color: map-get($map: $bgColor, $key: 'section');
+    video{
+        @extend .mediaHeader;
+    }
+    div{
+        @extend .text-over-header;
+        background-color: map-get($map: $bgColor, $key: 'footer');
+        height: 100%;
+        width: 100%;
+        h1{
+            @extend .text-center;
+            @extend .text-uppercase;
+            color: map-get($map: $textColor, $key: 'white');
+            font-size: $titleXxl;
+            font-weight: $textBold;
+        }
+        h2{
+            @extend .text-center;
+            @extend .text-uppercase;
+            color: map-get($map: $textColor, $key: 'red');
+            font-size: $titleXl;
+            font-weight: $textBold;
+        }
+    }
+    img{
+        @extend .mediaHeader;
+    }
+}
+
+#Nosotros{
+    @extend .borde;
+    @extend .screenSection;
+    div{
+        @extend .borde;
+        article{
+            @extend .borde;
+            img{
+                @extend .img-nos;
+            }
+        }
+        article{
+            h2{
+                @extend .text-center;
+                @extend .text-uppercase;
+                padding-bottom: 1.5rem;
+                @extend .textUnderline;
+                color: map-get($map: $textColor, $key: 'white');
+                font-size: $titleLg;
+                font-weight: $textBold;
+            }
+            p{
+                @extend .text-center;
+                color: map-get($map: $textColor, $key: 'white');
+                font-size: $textMd;
+                font-weight: $textReg; 
+            }
+            a{
+                text-decoration: none;
+                @extend .text-center;
+                padding-bottom: 0.5rem; 
+                @extend .hoverSoft;
+                color: map-get($map: $textColor, $key: 'white');
+                font-size: $textMd;
+                font-weight: $textReg; 
+            }
+        }
+    }
+}
+
+#break1{
+    img{
+        @extend .img-break;
+    }
+}
+
+#Eventos{
+    @extend .screenSection;
+    @extend .borde;
+    div{
+        h2{
+            @extend .borde;
+            @extend .text-center;
+            @extend .text-uppercase;
+            padding-bottom: 1.5rem;
+            @extend .textUnderline;
+            color: map-get($map: $textColor, $key: 'white');
+            font-size: $titleLg;
+            font-weight: $textBold;
+        }
+    }
+    #CarrouselEventos{
+        @extend .borde;
+        div{
+            div{
+                div{
+                    margin-top: 3rem;
+                    figure{
+                        @extend .borde;
+                        @extend .text-center;
+                        margin-bottom: 3rem;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        img{
+                            @extend .img-carEventos;
+                        }
+                        figcaption{
+                            @extend .py-2;
+                            color: map-get($map: $textColor, $key: 'red');
+                            font-size: $textMd;
+                            font-weight: $textReg;
+                        }
+                        p{
+                            @extend .py-2;
+                            color: map-get($map: $textColor, $key: 'white');
+                            font-size: $textSm;
+                            font-weight: $textLight;  
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#break2{
+    position: relative;
+    overflow: hidden;
+    img{
+        @extend .img-break;
+    }
+    div{
+        @extend .text-over-break;
+        background-color: map-get($map: $bgColor, $key: 'footer');
+        height: 100%;
+        width: 100%;
+        @extend .borde;
+        h2{
+            @extend .text-center;
+            @extend .text-uppercase;
+            color: map-get($map: $textColor, $key: 'white');
+            font-size: $titleLg;
+            font-weight: $textBold; 
+        }
+    }
+}
+
+#AyB{
+    @extend .borde;
+    @extend .screenSection;
+    div{
+        article{
+            @extend .borde;
+            padding: 5rem 15rem 5rem 15rem;
+            a{
+                position: relative;
+                figure{
+                    @extend .borde;
+                    img{
+                        @extend .img-AyB;
+                    }
+                    figcaption{
+                        @extend .hoverHard;
+                        @extend .text-center;
+                        color: map-get($map: $textColor, $key: 'white');
+                        font-size: $textXl;
+                        font-weight: $textBold;  
+                        
+                        position: absolute;
+                        top: 30%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+                }
+            }
+        }
+    }
+}

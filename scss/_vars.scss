@@ -1,0 +1,25 @@
+//Colors
+$bgColor:(
+    'nav':rgb(0,0,0),
+    'section':rgb(17,17,17),
+    'header':rgba(0,0,0,0.2),
+    'footer':rgba(0,0,0,0.5),
+);
+
+$paletaColor:(
+    'bordeForm':rgb(128,128,128),
+    'bordeInputText':rgb(255,255,255),
+    'InputDrop':rgb(32,28,28),
+    'InputDropHover':rgb(17,17,17),
+    'BtnSubmit':rgb(200,17,17),
+    'BtnSubmitHover':rgb(160,13,13),
+);
+
+//Heights
+$heightSS:(
+    'desktop':90vh,
+    'tablet':50vh,
+    'mobile':90vh,
+);
+
+$heightNavbar:9vh;

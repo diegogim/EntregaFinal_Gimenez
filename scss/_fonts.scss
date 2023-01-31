@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap');
+@font-face {
+    font-family: 'dust_westitalic';
+    src: url('../src/fonts/Dust_West/dust_west-webfont.woff2') format('woff2'),
+         url('../src/fonts/Dust_West/dust_west-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+//Fonts
+$fontMain:'dust_westitalic', sans-serif;
+$fontSecondary:'Cabin Sketch', cursive;
+
+//Sizes
+$textXs:1rem;
+$textSm:1.5rem;
+$textMd:2rem;
+$textLg:3rem;
+$textXl:4rem;
+$textXxl:5rem;
+$titleXs:2.5rem;
+$titleSm:3.5rem;
+$titleMd:5rem;
+$titleLg:8rem;
+$titleXl:12rem;
+$titleXxl:15rem;
+
+//Weights
+$textLight:300;
+$textReg:400;
+$textBold:700;
+
+//Colors
+$textColor:(
+    'white':rgb(255, 255, 255),
+    'gray':rgb(134, 125, 125),
+    'red':rgb(200, 17, 17),
+);
+
+.text-label{
+    text-align: center;
+    color: map-get($map: $textColor, $key: 'white');
+    font-size: $textSm;
+    font-family: $fontSecondary;
+}
+
+.text-input{
+    color: map-get($map: $textColor, $key: 'white');
+    font-family: $fontSecondary;
+    font-size: $textSm;
+}
+
+.textUnderline{
+    display: inline-block;
+    position: relative;
+    color: map-get($map: $paletaColor, $key: 'BtnSubmitHover');
+
+    &::after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(1);
+        height: 0.5rem;
+        bottom: 0;
+        left: 0;
+        background-color: map-get($map: $paletaColor, $key: 'BtnSubmitHover');
+    }
+}

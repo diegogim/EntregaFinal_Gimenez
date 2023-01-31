@@ -1,0 +1,84 @@
+#reserva1{
+    @extend .borde;
+    div{
+        article{
+            @extend .borde;
+            @extend .screenSection;
+            #titleReserva{
+                @extend .textUnderline;
+                h3{
+                    @extend .borde;
+                    @extend .text-center;
+                    @extend .text-uppercase;
+                    color: map-get($map: $textColor, $key: 'white');
+                    font-size: $titleLg;
+                    font-weight: $textReg;
+                }
+            }
+            p{
+                @extend .borde;
+                @extend .text-center;
+                @extend .margenP;
+                color: map-get($map: $textColor, $key: 'white');
+                font-size: $textLg;
+                font-weight: $textReg;
+            }
+        }
+        #formReserva{
+            @extend .borde;
+            @extend .screenSection;
+            form{
+                @extend .bordeForm;
+                @extend .text-label;
+                @extend .text-start;
+                input[type=text]{
+                    @extend .bordeFieldForm;
+                    @extend .text-input;
+                    width: 25vw;
+                    margin: 10px 0px;
+                }
+                input[type=tel]{
+                    @extend .bordeFieldForm;
+                    @extend .text-input;
+                    width: 15vw;
+                    margin: 10px 5px;
+                }
+                input[type=email]{
+                    @extend .bordeFieldForm;
+                    @extend .text-input;
+                    width: 41vw;
+                    margin: 10px 0;
+                }
+                textarea{
+                    @extend .bordeFieldForm;
+                    @extend .text-input;
+                    width: 41vw;
+                    margin: 10px 0;
+                }
+                input[type=date], select{
+                    @extend .btnDropdown;
+                    width: 9.5vw;
+                    margin: 0 1rem 2rem 0;
+                    font-size: $textSm;
+                }
+                #btnSub{
+                    @extend .text-center;
+                    input[type=submit] {
+                        width: 20vw;
+                        height: 5vh;
+                        font-size: $textSm;
+                        margin: 2rem 0;
+                        background-color: map-get($map: $paletaColor, $key: 'BtnSubmit');
+                        border: none;
+                        color: map-get($map: $textColor, $key: 'white');
+                        border-radius: 1rem;
+                        text-transform: uppercase;
+                        &:hover {
+                            background-color: map-get($map: $paletaColor, $key: 'BtnSubmitHover');
+                        }
+                    }    
+                }  
+            }
+        }
+    }
+}
