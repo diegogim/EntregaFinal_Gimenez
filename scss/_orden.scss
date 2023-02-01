@@ -4,6 +4,42 @@ main{
         padding-left: 15rem;
         padding-right: 15rem; 
         padding-bottom: 5rem;   
+        h2{
+            font-size: $textLg;
+        }
+
+        #linkMenu{
+            @extend .borde;
+            @extend .screenSection;
+            div{
+                article{
+                    @extend .borde;
+                    padding: 5rem 15rem 5rem 15rem;
+                    a{
+                        position: relative;
+                        figure{
+                            @extend .borde;
+                            img{
+                                @extend .img-AyB;
+                            }
+                            figcaption{
+                                @extend .hoverHard;
+                                @extend .text-center;
+                                color: map-get($map: $textColor, $key: 'white');
+                                font-size: $textXl;
+                                font-weight: $textBold;  
+                                
+                                position: absolute;
+                                top: 30%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
         td{
             font-family: $fontSecondary;
             font-size: $textMd;

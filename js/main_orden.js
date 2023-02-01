@@ -1,9 +1,12 @@
 const fn_renderPedido = () => {
     const orden = fn_cargarLS("orden");
     let cantidad = orden.reduce((cant, e) => cant += e.cantidad, 0);
+    let renderTitle = "";
     let renderizado = "";
 
-    if (cantidad > 0) {    
+    if (cantidad > 0) {
+        renderTitle = `<h2>Aquí está tu pedido</h2>`;
+        
         renderizado = `
             <table class="table">
             <tbody>
@@ -31,14 +34,30 @@ const fn_renderPedido = () => {
         renderizado += `<tr>
         <td colspan="3"><b>Total de tu orden</b></td>
         <td>$${fn_totalPedido()}</td>
-        <td>&nbsp;</td>
         </tr>
         </tbody>
         </table>`;
     } else {
-        renderizado = `<div class="alert alert-danger text-center" role="alert">No se encontraron Productos en el Carrito!</div>`;
+        renderTitle = "";
+        renderizado = `
+            <div class="alert alert-dark text-center" role="alert">
+                <h2>Aún no has agregado nada a tu pedido</h2>
+            </div>
+            <section class="d-flex align-items-center justify-content-center" id="linkMenu">
+            <div class="row">
+                <article class="col-sm-12 col-md-12 d-flex justify-content-center">
+                    <a href="./menu.html">
+                        <figure>
+                            <img src="./src/img/index/Alimentos.webp" alt="Imagen de un plato de costillas, servido con pan Texas Toast y acompañado de un tarro de cerveza">
+                            <figcaption>Ir al menú</figcaption>
+                        </figure>
+                    </a>
+                </article>
+            </div>
+            </section>`;
     }
 
+    document.getElementById("headerPedido").innerHTML = renderTitle;
     document.getElementById("renderPedido").innerHTML = renderizado;
 }
 

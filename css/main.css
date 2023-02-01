@@ -7944,7 +7944,7 @@ textarea.form-control-lg {
   text-align: right !important;
 }
 
-.text-center, #reserva1 div #formReserva form #btnSub, #reserva1 div article p, #reserva1 div article #titleReserva h3, #reserva1 div article #titleReserva .h3, #eventos2 h2, #eventos2 .h2, #eventos1 #CarrouselEventos2 div div div figure, #eventos1 h2, #eventos1 .h2, main #titleBebidas, main #titleAlimentos, #nos2 div article p, #nos2 div article div h2, #nos2 div article div .h2, #carrNos div div, #nos1 div article p, #nos1 div article div h2, #nos1 div article div .h2, footer section div h4, footer section div .h4, footer section p a, footer section p, footer section h2, footer section .h2, #AyB div article a figure figcaption, #break2 div h2, #break2 div .h2, #Eventos #CarrouselEventos div div div figure, #Eventos div h2, #Eventos div .h2, #Nosotros div article a, #Nosotros div article p, #Nosotros div article h2, #Nosotros div article .h2, #headerIndex div h2, #headerIndex div .h2, #headerIndex div h1, #headerIndex div .h1, #headerPedido h2, #headerPedido .h2, #headerSecondary div h2, #headerSecondary div .h2 {
+.text-center, main #renderPedido #linkMenu div article a figure figcaption, #reserva1 div #formReserva form #btnSub, #reserva1 div article p, #reserva1 div article #titleReserva h3, #reserva1 div article #titleReserva .h3, #eventos2 h2, #eventos2 .h2, #eventos1 #CarrouselEventos2 div div div figure, #eventos1 h2, #eventos1 .h2, main #titleBebidas, main #titleAlimentos, #nos2 div article p, #nos2 div article div h2, #nos2 div article div .h2, #carrNos div div, #nos1 div article p, #nos1 div article div h2, #nos1 div article div .h2, footer section div h4, footer section div .h4, footer section p a, footer section p, footer section h2, footer section .h2, #AyB div article a figure figcaption, #break2 div h2, #break2 div .h2, #Eventos #CarrouselEventos div div div figure, #Eventos div h2, #Eventos div .h2, #Nosotros div article a, #Nosotros div article p, #Nosotros div article h2, #Nosotros div article .h2, #headerIndex div h2, #headerIndex div .h2, #headerIndex div h1, #headerIndex div .h1, #headerPedido h2, #headerPedido .h2, #headerSecondary div h2, #headerSecondary div .h2 {
   text-align: center !important;
 }
 
@@ -10772,7 +10772,7 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-.borde, #reserva1 div #formReserva, #reserva1 div article p, #reserva1 div article #titleReserva h3, #reserva1 div article #titleReserva .h3, #reserva1 div article, #reserva1, #eventos2 h2, #eventos2 .h2, #eventos2, #eventos1 #CarrouselEventos2 div div div figure, #eventos1 #CarrouselEventos2, #eventos1 h2, #eventos1 .h2, main #renderMenu #elementoMenu #elementoImg #containerInfo div div p, main #renderMenu #elementoMenu #elementoImg #containerInfo div h5, main #renderMenu #elementoMenu #elementoImg #containerInfo div .h5, main #renderMenu #elementoMenu #elementoImg #containerInfo div h4, main #renderMenu #elementoMenu #elementoImg #containerInfo div .h4, main #renderMenu #elementoMenu #elementoImg #containerInfo div, main #renderMenu #elementoMenu #elementoImg #containerImg img, main #renderMenu #elementoMenu #elementoImg #containerImg, main #renderMenu #elementoMenu, main #titleBebidas, main #titleAlimentos, #nos2 div article, #nos2, #carrNos, #nos1 div article, #nos1, footer section, #AyB div article a figure, #AyB div article, #AyB, #break2 div, #Eventos #CarrouselEventos div div div figure, #Eventos #CarrouselEventos, #Eventos div h2, #Eventos div .h2, #Eventos, #Nosotros div article, #Nosotros div, #Nosotros {
+.borde, main #renderPedido #linkMenu div article a figure, main #renderPedido #linkMenu div article, main #renderPedido #linkMenu, #reserva1 div #formReserva, #reserva1 div article p, #reserva1 div article #titleReserva h3, #reserva1 div article #titleReserva .h3, #reserva1 div article, #reserva1, #eventos2 h2, #eventos2 .h2, #eventos2, #eventos1 #CarrouselEventos2 div div div figure, #eventos1 #CarrouselEventos2, #eventos1 h2, #eventos1 .h2, main #renderMenu #elementoMenu #elementoImg #containerInfo div div p, main #renderMenu #elementoMenu #elementoImg #containerInfo div h5, main #renderMenu #elementoMenu #elementoImg #containerInfo div .h5, main #renderMenu #elementoMenu #elementoImg #containerInfo div h4, main #renderMenu #elementoMenu #elementoImg #containerInfo div .h4, main #renderMenu #elementoMenu #elementoImg #containerInfo div, main #renderMenu #elementoMenu #elementoImg #containerImg img, main #renderMenu #elementoMenu #elementoImg #containerImg, main #renderMenu #elementoMenu, main #titleBebidas, main #titleAlimentos, #nos2 div article, #nos2, #carrNos, #nos1 div article, #nos1, footer section, #AyB div article a figure, #AyB div article, #AyB, #break2 div, #Eventos #CarrouselEventos div div div figure, #Eventos #CarrouselEventos, #Eventos div h2, #Eventos div .h2, #Eventos, #Nosotros div article, #Nosotros div, #Nosotros {
   border-color: red;
   border-style: none;
 }
@@ -10887,7 +10887,7 @@ h4, .h4, h5, .h5, p, figcaption, a {
   transform: translate(-50%, -50%);
 }
 
-.screenSection, #reserva1 div #formReserva, #reserva1 div article, #eventos2, #eventos1, main #renderMenu, #nos2, #carrNos, #nos1, footer section, #AyB, #Eventos, #Nosotros {
+.screenSection, main #renderPedido #linkMenu, #reserva1 div #formReserva, #reserva1 div article, #eventos2, #eventos1, main #renderMenu, #nos2, #carrNos, #nos1, footer section, #AyB, #Eventos, #Nosotros {
   height: 90vh;
   background-color: rgb(17, 17, 17);
   overflow: hidden;
@@ -10905,7 +10905,7 @@ h4, .h4, h5, .h5, p, figcaption, a {
   object-fit: cover;
 }
 
-.img-AyB, #AyB div article a figure img {
+.img-AyB, main #renderPedido #linkMenu div article a figure img, #AyB div article a figure img {
   height: 450px;
   width: 450px;
   object-fit: cover;
@@ -10981,12 +10981,12 @@ h4, .h4, h5, .h5, p, figcaption, a {
   color: rgb(255, 255, 255);
 }
 
-.hoverHard, #AyB div article a figure figcaption {
+.hoverHard, main #renderPedido #linkMenu div article a figure figcaption, #AyB div article a figure figcaption {
   display: inline-block;
   position: relative;
   color: rgb(160, 13, 13);
 }
-.hoverHard::after, #AyB div article a figure figcaption::after {
+.hoverHard::after, main #renderPedido #linkMenu div article a figure figcaption::after, #AyB div article a figure figcaption::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -10998,11 +10998,11 @@ h4, .h4, h5, .h5, p, figcaption, a {
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
-.hoverHard:hover:after, #AyB div article a figure figcaption:hover:after {
+.hoverHard:hover:after, main #renderPedido #linkMenu div article a figure figcaption:hover:after, #AyB div article a figure figcaption:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
-.hoverHard:link, #AyB div article a figure figcaption:link, .hoverHard:visited, #AyB div article a figure figcaption:visited, .hoverHard:active, #AyB div article a figure figcaption:active {
+.hoverHard:link, main #renderPedido #linkMenu div article a figure figcaption:link, #AyB div article a figure figcaption:link, .hoverHard:visited, main #renderPedido #linkMenu div article a figure figcaption:visited, #AyB div article a figure figcaption:visited, .hoverHard:active, main #renderPedido #linkMenu div article a figure figcaption:active, #AyB div article a figure figcaption:active {
   text-decoration: none;
 }
 
@@ -11256,6 +11256,10 @@ main #renderLista .btn {
   border-style: solid;
   background-color: rgb(32, 28, 28);
 }
+main #renderLista .btn:hover {
+  border-color: rgb(17, 17, 17);
+  background-color: rgb(17, 17, 17);
+}
 main #renderMenu {
   margin: 5rem 1rem 0 0;
 }
@@ -11431,6 +11435,24 @@ main #renderPedido {
   padding-right: 15rem;
   padding-bottom: 5rem;
 }
+main #renderPedido h2, main #renderPedido .h2 {
+  font-size: 3rem;
+}
+main #renderPedido #linkMenu div article {
+  padding: 5rem 15rem 5rem 15rem;
+}
+main #renderPedido #linkMenu div article a {
+  position: relative;
+}
+main #renderPedido #linkMenu div article a figure figcaption {
+  color: rgb(255, 255, 255);
+  font-size: 4rem;
+  font-weight: 700;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 main #renderPedido td {
   font-family: "Cabin Sketch", cursive;
   font-size: 2rem;
@@ -11513,7 +11535,7 @@ main #renderPedido td #btnEliminarPedido:hover {
   #headerSecondary div h2, #headerSecondary div .h2 {
     font-size: 12rem;
   }
-  .screenSection, #Nosotros, #Eventos, #AyB, footer section, #nos1, #carrNos, #nos2, main #renderMenu, #eventos1, #eventos2, #reserva1 div article, #reserva1 div #formReserva {
+  .screenSection, #Nosotros, #Eventos, #AyB, footer section, #nos1, #carrNos, #nos2, main #renderMenu, #eventos1, #eventos2, #reserva1 div article, #reserva1 div #formReserva, main #renderPedido #linkMenu {
     height: 50vh;
   }
   .margenH {
@@ -11536,7 +11558,7 @@ main #renderPedido td #btnEliminarPedido:hover {
     width: 200px;
     height: 200px;
   }
-  #AyB div article figure .img-AyB, #AyB div article a figure img {
+  #AyB div article figure .img-AyB, #AyB div article a figure img, #AyB main #renderPedido #linkMenu div article a figure img, main #renderPedido #linkMenu #AyB div article a figure img {
     height: 300px;
     width: 300px;
   }
@@ -11687,7 +11709,7 @@ main #renderPedido td #btnEliminarPedido:hover {
   #headerSecondary div h2, #headerSecondary div .h2 {
     font-size: 8rem;
   }
-  .screenSection, #Nosotros, #Eventos, #AyB, footer section, #nos1, #carrNos, #nos2, main #renderMenu, #eventos1, #eventos2, #reserva1 div article, #reserva1 div #formReserva {
+  .screenSection, #Nosotros, #Eventos, #AyB, footer section, #nos1, #carrNos, #nos2, main #renderMenu, #eventos1, #eventos2, #reserva1 div article, #reserva1 div #formReserva, main #renderPedido #linkMenu {
     height: 90vh;
     align-items: stretch;
   }
@@ -11715,7 +11737,7 @@ main #renderPedido td #btnEliminarPedido:hover {
     width: 150px;
     height: 150px;
   }
-  #AyB div article figure .img-AyB, #AyB div article a figure img {
+  #AyB div article figure .img-AyB, #AyB div article a figure img, #AyB main #renderPedido #linkMenu div article a figure img, main #renderPedido #linkMenu #AyB div article a figure img {
     height: 200px;
     width: 200px;
   }

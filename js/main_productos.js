@@ -92,6 +92,15 @@ const agregarAOrden = (id) => {
 
   fn_guardarLS("orden",orden);
   fn_renderIcono();
+  
+  Toastify({
+    text: "Agregado a tu pedido",
+    duration: 2000,
+    stopOnFocus: true,
+    style: {
+      background: "#c81111",
+    },
+    }).showToast();
 }
 
 fn_guardarLS("productos", array_productos);

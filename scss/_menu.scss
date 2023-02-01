@@ -21,6 +21,10 @@ main{
             border-color: map-get($map: $paletaColor, $key: 'InputDrop');
             border-style: solid;
             background-color: map-get($map: $paletaColor, $key: 'InputDrop');
+            &:hover{
+                border-color: map-get($map: $paletaColor, $key: 'InputDropHover');
+                background-color: map-get($map: $paletaColor, $key: 'InputDropHover');
+            }
         }
     }
 
